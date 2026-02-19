@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Portfolio pessoal</title>
 </head>
+
 <body>
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contato">Contato</a>
+                <a href="#contato" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <div>
-            <img src="./img/perfil1.jpeg" alt="Foto de André Luiz Bristot" class="foto-perfil">
-            <h1>André Luiz Bristot</h1>
-            <p>Desenvolvedor Full Stack</p>
-        </div>
+        <img src="./img/perfil2.jpeg" alt="Foto de André Luiz Bristot" class="foto-perfil">
+        <h1>André Luiz Bristot</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Sou um jovem de 24 anos, aspirante a programador Full Stack. Sou comunicativo, dedicado, proativo e gosto de trabalhar em equipe. Procuro sempre inovar e aprender mais. Sei me organizar e gosto de ajudar as pessoas a se desenvolverem.
+                Sou um jovem de 24 anos, aspirante a programador Full Stack. Sou comunicativo, dedicado, proativo e
+                gosto de trabalhar em equipe. Procuro sempre inovar e aprender mais. Sei me organizar e gosto de ajudar
+                as pessoas a se desenvolverem.
             </p>
         </div>
     </section>
@@ -45,35 +48,46 @@
         <div class="projetos-caixa">
             <div class="projetos-card">
                 <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
-                <h3 class="info-projetos">Loja de Carros</h3>
-                <p class="projetos-paragrafo">Loja virtual moderna com animações suaves e design responsivo para uma loja de carros de luxo.</p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="projetos-paragrafo">Loja virtual moderna com animações suaves e design responsivo para uma
+                    loja de carros de luxo.</p>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem">
-                <h3 class="info-projetos">Página de Viagens</h3>
-                <p class="projetos-paragrafo">Uma página interativa com roteiros de viagem mais cobiçados do mundo.</p>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Página de Viagens</h3>
+                    <p class="projetos-paragrafo">Uma página interativa com roteiros de viagem mais cobiçados do mundo.</p>
+                </div>
             </div>
 
             <div class="projetos-card">
-                <img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem">
-                <h3 class="info-projetos">Microsoft</h3>
-                <p class="projetos-paragrafo">Página da Microsoft criada para demonstrar conhecimentos em diversas tecnologias.</p>
+                <img src="./img/projeto3.jpg" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Microsoft</h3>
+                    <p class="projetos-paragrafo">Página da Microsoft criada para demonstrar conhecimentos em diversas
+                    tecnologias.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contato" class="contato">
-        <h2 class="contato-titulo">Contato</h2>
+        <h2 class="contato-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
+            <div class="grupo-form">
                 <input class="campo-form" placeholder="Nome">
             </div>
 
             <div class="grupo-form">
-                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
         </form>
     </section>
 </body>
+
 </html>
