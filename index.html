@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
+
     <nav class="navegacao">
         <ul class="menu">
             <li>
@@ -78,16 +80,18 @@
         <h2 class="contato-titulo">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
             <div class="grupo-form">
-                <input class="campo-form" placeholder="Nome">
+                <input class="campo-form" id="nome" placeholder="Nome">
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" rows="6" id="mensagem" placeholder="Digite sua Mensagem"></textarea>
             </div>
 
             <button type="submit" class="botao-form">Enviar WhatsApp</button>
         </form>
     </section>
+
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
